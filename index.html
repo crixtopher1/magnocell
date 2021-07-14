@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAGNO-CELL</title>
+    <link rel="shortcut icon" href="img/favicon.png" class="favicon">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <a href="index.html"> <img src="img/logo3.png" class="imglogo"></a>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li class="activo"><a href="index.html">Home</a></li>
+                    <li class="activo"><a href="menu/catalogo.html">Catalago</a></li>
+                    <li class="activo"><a href="menu/quiensomos.html">Quienes Somos</a></li>
+                    <li class="activo"><a href="menu/cart.html">Cart</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="information">
+            <div class="overlay"></div>
+            <img src="img/mobile1.png" class="mobile">
+            <div id="circle">
+                <div class="feature one">
+                    <img src="img/camera.png">
+                    <div class="txt">
+                         <a href="menu/catalogo.html"><h1>Accessories</h1> 
+                        <p>Capas, Peliculas, Carregador e Mais</p></a>
+                    </div>
+                </div>
+                <div class="feature two">
+                   <img src="img/processor.png">
+                   <div class="txt">
+                    <a href="menu/catalogo.html"><h1>Manutenção</h1>
+                        <p>Iphone, Samsung, LG, e Mais</p>
+                    </div></a>
+                </div>
+                <div class="feature three">
+                    <img src="img/display.png">
+                    <div class="txt">
+                        <a href="menu/catalogo.html"><h1>Display</h1>
+                        <p>Frontales Iphone, Samsung e mais</p></a>
+                    </div>
+                </div>
+                <div class="feature four">
+                    <img src="img/battery.png">
+                    <div class="txt">
+                        <a href="menu/catalogo.html"><h1>battery</h1>
+                        <p>Temos baterias para tudos equipo</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <img src="img/arrow.png" id="upBtn">
+            <h3>Pode assistir</h3>
+            <img src="img/arrow.png" id="downBtn">
+        </div>
+    </div>
+
+    <footer class="footer">
+    <div class="inner-footer">
+        <div class="social-link">
+            <ul>
+                <li class="social-items"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li class="social-items"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li class="social-items"><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                <li class="social-items"><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+
+
+        <div class="outer-footer">
+           Copyright &copy;<a class="txt" href="https://api.whatsapp.com/send?phone=5592984078383" target="_blank" > Crixtopher1</a>. All rights Reserved
+        </div>
+        
+    </div>
+    </footer>
+
+    <script>
+        var circle = document.getElementById("circle");
+        var upBtn = document.getElementById("upBtn");
+        var downBtn = document.getElementById("downBtn");
+
+        var rotateValue = circle.style.transform;
+        var rotateSum;
+
+        upBtn.onclick = function(){
+            rotateSum = rotateValue + "rotate(-90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+
+        downBtn.onclick = function(){
+            rotateSum = rotateValue + "rotate(90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+    </script>
+
+</body>
+</html>
